@@ -1,0 +1,107 @@
+object fEdit: TfEdit
+  Left = 347
+  Height = 218
+  Top = 430
+  Width = 515
+  BorderStyle = bsDialog
+  Caption = 'Редактор данных'
+  ClientHeight = 218
+  ClientWidth = 515
+  Color = 12219903
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 26
+    Height = 15
+    Top = 6
+    Width = 161
+    Caption = 'Укажите ФИО преподавателя'
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 26
+    Height = 23
+    Top = 30
+    Width = 304
+    Color = clNone
+    OnChange = eNameChange
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 26
+    Height = 15
+    Top = 62
+    Width = 166
+    Caption = 'Укажите почту преподавателя'
+    ParentColor = False
+  end
+  object epochta: TEdit
+    Left = 26
+    Height = 23
+    Top = 88
+    Width = 216
+    Color = clNone
+    OnChange = epochtaChange
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 26
+    Height = 15
+    Top = 120
+    Width = 103
+    Caption = 'Выберите предмет'
+    ParentColor = False
+  end
+  object CBNote: TComboBox
+    Left = 26
+    Height = 23
+    Top = 139
+    Width = 216
+    Color = clNone
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'ААС'
+      'МДК 05.01'
+      'МДК 05.05'
+      'МДК 06.01'
+      'ООП'
+      'ООС'
+      'УП'
+      'дискретная математика'
+      'иностранный язык'
+      'компьютерные сети'
+      'право'
+      'психология'
+      'физкультура'
+    )
+    OnChange = CBNoteChange
+    TabOrder = 2
+    Text = 'ААС'
+  end
+  object bSave: TBitBtn
+    Left = 26
+    Height = 21
+    Top = 171
+    Width = 128
+    Caption = 'сохранить запись'
+    Color = clNone
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 179
+    Height = 21
+    Top = 171
+    Width = 128
+    Cancel = True
+    Caption = 'Не сохранять'
+    Color = 16050943
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+end

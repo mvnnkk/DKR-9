@@ -1,0 +1,95 @@
+object fMain: TfMain
+  Left = 208
+  Height = 454
+  Top = 121
+  Width = 776
+  Align = alTop
+  BorderStyle = bsDialog
+  Caption = 'список преподавателей группы ИСПк-203'
+  ClientHeight = 454
+  ClientWidth = 776
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 35
+    Top = 0
+    Width = 776
+    Align = alTop
+    ClientHeight = 35
+    ClientWidth = 776
+    TabOrder = 0
+    object bAdd1: TSpeedButton
+      Left = 16
+      Height = 27
+      Top = 5
+      Width = 192
+      Caption = '💗Добавить преподавателя'
+      Color = 14002943
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = bAddClick
+      ParentFont = False
+    end
+    object bSort1: TSpeedButton
+      Left = 216
+      Height = 27
+      Top = 5
+      Width = 160
+      Caption = '💗Сортировать список'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = bSortClick
+      ParentFont = False
+    end
+    object bDel1: TSpeedButton
+      Left = 384
+      Height = 27
+      Top = 5
+      Width = 184
+      Caption = '💗Удалить преподавателя'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = bDelClick
+      ParentFont = False
+    end
+    object bEdit1: TSpeedButton
+      Left = 576
+      Height = 27
+      Top = 5
+      Width = 184
+      Caption = '💗Редактировать данные'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = bEditClick
+      ParentFont = False
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 422
+    Top = 32
+    Width = 776
+    Align = alBottom
+    Color = clNone
+    ColCount = 3
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+end
